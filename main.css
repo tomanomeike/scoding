@@ -1,0 +1,132 @@
+body{
+    margin:0;
+    /* box-sizing: border-box; */
+}
+.container-wrapper{
+   background-image: url("./images/background.png");
+   background-repeat: no-repeat;
+   /* top: 154px;
+left: 0px; */
+/* width: 1504px;
+height: 744px; */
+}
+.slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  .container-stripe{
+      background-color: #2E3179 ;
+      color:white;
+  }
+/* cars */
+  
+ 
+  /* .module-car:nth-of-type(3n) {
+    margin-right: 0;
+  } */
+
+  /* .module-car::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(transparent 20%, black); */
+    /* z-index: 1;
+  } */ 
+  .car-info {
+   display: flex;
+  flex-direction: column;
+  width:308px;
+  height: 540px;
+  border: 1px solid black;
+  line-height: 0.5;
+  }
+  .car-title::before {
+    content: "Title";
+    display: block;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    color: #999;
+  }
+  /* .car-director::before {
+    content: "Director";
+    display: block;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    color: #999;
+  } */
+  .cars-container{
+     background-color: #F5F5F5;
+     /* height: 1526px; */
+  }
+
+  .cards-container{
+      background-image: url("./images/background2.png");
+      background-repeat: no-repeat;
+  }
+  .cards{
+      background-color: #FFFFFF;
+      box-shadow: 0px 5px 20px #00000026;
+     padding: 40px 20px 34px 20px;
+  }
+  .card{
+      width: 272px;
+      display: inline-block;
+      line-height: 0.5;
+     
+      }
+      .card-text{
+        padding: 0 20px;
+      }
+  /* .card-deck {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 4;
+    }
+  } */
+
+  .social .facebook, .instagram, .telegram, .youtube{
+      display: block;
+    background-color: #F0F0F0;
+    transform: skew(-30deg);
+    height: 40px;
+    margin-right: 5px;
+
+  }
+  .social img{
+    transform: skew(30deg);  
+  }
