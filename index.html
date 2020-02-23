@@ -11,7 +11,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.scss" />
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -22,115 +22,171 @@
     <header>
       <div class="container">
         <div class="row nav">
-          <div class="col-md-3">
+          <div class="col-md-3 logo">
             <img src="images/logo.svg" alt="logo" />
           </div>
           <div class="col-md-3 social text-center">
             <div class="row">
-              <a class="col-md-3 facebook" href="#"
+              <a class="col-md-2 facebook" href="#"
                 ><img src="images/facebook-icon.svg" alt="facebook icon"
               /></a>
-              <a class="col-md-3 instagram" href="#">
+              <a class="col-md-2 instagram" href="#">
                 <img src="images/instagram-icon.svg" alt="instagram icon" />
               </a>
-              <a class="col-md-3 telegram" href="#"
+              <a class="col-md-2 telegram" href="#"
                 ><img src="images/telegram-icon.svg" alt="telegram icon"
               /></a>
-              <a class="col-md-3 youtube" href="#"
+              <a class="col-md-2 youtube" href="#"
                 ><img src="images/youtube-icon.svg" alt="youtube icon"
               /></a>
             </div>
           </div>
           <div class="col-md-3">
             <div class="row">
-              <div class="col-md-1 city">Київ</div>
-              <div class="col-md-1 triangle">
-                <img src="images/triangle.svg" alt="triangle icon" />
+              <div class="col-md-4 form-group city">
+                <select
+                  class="contacts form-control shadow-none"
+                  id="FormControlSelect1"
+                >
+                  <option>Київ</option>
+                  <option>Київ</option>
+                  <option>Київ</option>
+                  <option>Київ</option>
+                  <option>Київ</option>
+                </select>
               </div>
-              <div class="col-md-1 phone">
+              <div class="col-md-8 contacts">
                 <img src="images/phone-icon.svg" alt="phone icon" />
+                <div>+ 380 95 829 5001</div>
               </div>
-              <div class="col-md-8">+ 380 95 829 5001</div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="row">
-              <div class="col-md-1 phone">
-                <img src="images/phone-icon2.svg" alt="phone icon" />
-              </div>
-              <div class="col-md-8">зворотний дзвінок</div>
+            <div class="contacts">
+              <img src="images/phone-icon2.svg" alt="phone icon" />
+              <div>зворотний дзвінок</div>
             </div>
           </div>
         </div>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav">
+        <!-- 
+        <nav class="navbar navbar-expand-sm navbar-light bg-default">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <img src="images/logo.svg" alt="logo" /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="images/facebook-icon.svg" alt="facebook icon"
+                  /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="images/instagram-icon.svg" alt="instagram icon" /></a>
+              </li>  
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="images/telegram-icon.svg" alt="telegram icon"
+                    /></a>
+                </li> 
+                
                 <li class="nav-item">
-                  <a class="nav-link" href="#">доставка і розмитнення</a>
-                </li>
+                  <a class="nav-link" href="#"><img src="images/youtube-icon.svg" alt="youtube icon"
+                    /></a>
+                </li> 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">аукціон</a>
-                </li>
+                  <a class="nav-link" href="#">
+                    <div class="form-group city">
+                      <select class="form-control shadow-none" id="FormControlSelect1">
+                        <option>Київ</option>
+                        <option>Київ</option>
+                        <option>Київ</option>
+                        <option>Київ</option>
+                        <option>Київ</option>
+                      </select>
+                    </div>
+                  </a>
+                </li> 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">автомобілі в Україні</a>
-                </li>  
+                  <a class="nav-link" href="#"><img src="images/phone-icon.svg" alt="phone icon" />
+                    <div>+ 380 95 829 5001</div></a>
+                </li>   
                 <li class="nav-item">
-                    <a class="nav-link" href="#">кpeдиt</a>
-                  </li> 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">про компанію</a>
-                  </li> 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">відгуки</a>
-                  </li> 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">відгуки</a>
-                  </li> 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">контакти</a>
-                  </li>   
-              </ul>
-            </div>  
-          </nav>
-        <!-- <div class="row">
-          <div class="col-md-3">доставка і розмитнення</div>
-          <div class="col-md-1">аукціон</div>
-          <div class="col-md-2">автомобілі в Україні</div>
-          <div class="col-md-1">кpeдиt</div>
-          <div class="col-md-2">про компанію</div>
-          <div class="col-md-1">відгуки</div>
-          <div class="col-md-1">блог</div>
-          <div class="col-md-1">контакти</div>
-        </div> -->
+                  <a class="nav-link" href="#"><img src="images/phone-icon2.svg" alt="phone icon" />
+                    <div>зворотний дзвінок</div>   </a>
+                </li> 
+            </ul>
+          </div>  
+        </nav> -->
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-default">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav nav-fill w-100">
+              <li class="nav-item">
+                <a class="nav-link" href="#">доставка і розмитнення</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">аукціон</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">автомобілі в Україні</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">кpeдиt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">про компанію</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">відгуки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">відгуки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">контакти</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
       </div>
     </header>
     <main>
-      <div class="container-wrapper">
+      <div class="wrapper">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h2>Вигідний шлях покупки якісного авто з США</h2>
-              <p>Міжнародна компанія відтепер в Україні</p>
-              <p>
+          <div class="row ">
+            <div class="col-md-6 text-content">
+              <h2 class="title">Вигідний шлях покупки якісного авто з США</h2>
+              <p class="subtitle">Міжнародна компанія відтепер в Україні</p>
+              <p class="text">
                 Найширший вибір автомобілів в наявності, а також авто у дорозі і
                 пропозицій на аукціонах. Страхування перевезень. Кредитування
                 навіть під замовлення.
               </p>
             </div>
-            <div class="col-md-6">
-              <h3>
+            <div class="col-md-2"></div>
+            <div class="col-md-4 select-card">
+              <h3 class="title">
                 Цікавлять можливі варіанти? Ми знайдемо для вас найкращі
                 пропозиції!
               </h3>
               <form class="text-center">
+                <label for="exampleFormControlInput1"></label>
                 <input
                   class="form-control"
                   type="text"
                   placeholder="Ваше ім'я"
                 />
+                <label for="exampleFormControlInput1"></label>
                 <input
                   class="form-control"
                   type="tel"
@@ -138,6 +194,7 @@
                   pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                 />
                 <div class="form-group">
+                  <label for="exampleFormControlInput1"></label>
                   <select class="form-control" id="select">
                     <option>виберіть Тип кузова</option>
                     <option>виберіть Тип кузова2</option>
@@ -148,6 +205,7 @@
                 </div>
                 <div class="slidecontainer">
                   <p>$6000-$<span id="demo"></span></p>
+                  <div class="slider-thumb"></div>
                   <input
                     type="range"
                     min="6000"
@@ -159,12 +217,15 @@
                 </div>
                 <div class="row">
                   <div class="col-md-3">$6 000</div>
-                  <div class="col-md-3">Бюджет</div>
-                  <div class="col-md-3">$70 000</div>
+                  <div class="col-md-5">Бюджет</div>
+                  <div class="col-md-4">$70 000</div>
                 </div>
-                <button type="button" class="btn btn-danger ">
-                  замовити підбір
-                </button>
+                <div class="text-center">
+                  <button type="button" class="btn button-orange">
+                    замовити підбір
+                  </button>
+                </div>
+               
               </form>
             </div>
           </div>
@@ -173,55 +234,67 @@
       <div class="container-stripe">
         <div class="container">
           <div class="row">
-            <div class="col md-4"><img src="./images/auto-circle.png " /></div>
-            <div class="col md-4">
+            <div class="col-md-4 d-flex align-items-center">
+              <img src="./images/auto-circle.png " />
+            </div>
+            <div class="col-md-5 d-flex align-items-center">
               <h2>
                 Підбір і точний розрахунок авто з США за вашими критеріями
               </h2>
             </div>
-            <div class="col md-4">
-              <button type="button" class="btn btn-outline-secondary">
+            <div class="col-md-3 d-flex align-items-center">
+              <button type="button" class="btn button-white">
                 замовити підбір
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="cars-container ">
+      <div class="cars-container py-5">
         <div class="container">
-          <h2 class="text-center">Топ пропозицій</h2>
-          <div >
+          <h2 class="text-start py-3">Топ пропозицій</h2>
+          <div>
             <script id="car-template" type="text/x-handlebars-template">
-              <div class="card" >
+              <div class="car" >
                   <img class="card-img-top" src="{{carImage}}" />
-                  <h4 class="card-title">{{carTitle}}</h4>
-                  <p class="card-text">{{carPrice}}</p>
-                  <p class="card-text">{{carYear}}</p>
-                  <p class="card-text">{{carFuel}}</p>
-                  <p class="card-text">{{carDrivenWheels}}</p>
-                  <p class="card-text">{{carEngine}}</p>
-                  <p class="card-text">{{carMileage}}</p>
-                  <p class="card-text">{{city}}</p>
-                  <p class="card-text">{{date}}</p>
-                  <a href="#" class="btn btn-outline-secondary">Подробнee</a>
+
+                    <div class="d-flex flex-column">
+                      <p class="car-title">{{carTitle}}</p>
+                      <p class="car-price">{{carPrice}}</p>
+                      <p class="car-text">{{carYear}}</p>
+                      <p class="car-text">{{carFuel}}</p>
+                      <p class="car-text">{{carDrivenWheels}}</p>
+                      <p class="car-text">{{carEngine}}</p>
+                      <p class="car-text">{{carMileage}}</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <p class="car-text">{{city}}</p>
+                      <p class="car-text">{{date}}</p>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn button-blue">Подробнee</a>
+                    </div>
+                   
+              </div>
+
               </div>
             </script>
 
-            <section  id="cars">
-
+            <section id="cars">
               <!-- append cars here -->
             </section>
           </div>
-
+          <div class="text-center">            
           <button type="button" class="btn btn-danger">Показать все</button>
+          </div>
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row my-5">
+          <div class="col-md-6 d-flex align-items-center">
             <h2>Автомобільні аукціони США з якими ми співпрацюємо</h2>
           </div>
-          <div class=" row col-md-6">
+          <div class="row col-md-6">
             <div class="col-md-4">
               <img src="images/logos/COPART-logo.png" />
             </div>
@@ -232,100 +305,104 @@
           </div>
         </div>
       </div>
-      <div class="cards-container">
+      <div class="cards-container py-5">
         <div class="container">
-            <h3>Вибір, безпека, вигода, швидкість</h3>
-            <p>Наші послуги</p>
-            <div class="row">
-                <div class="cards col-md-3">
-                    <div class="icon text-center"><img src="./images/hand-icon.svg" /></div>
-                    <div class="title">
-                        <h4 class="text-center">Вибір з аукціонів</h4>
-                    </div>
-                    <div class="content">Завдякі великій кількості портів, 
-                        через які ми доставляємо авто, наші менеджери мають
-                         набагато більше пропозицій. Ми не обмежуемся певними 
-                         регіонами пошуку. Також ви маєте можливість вибрати авто самостійно, в меню "Аукціон"</div>
-                </div>
-                <div class="cards col-md-3">
-                  <div class="icon text-center"><img src="./images/magnifier-icon.svg" /></div>
-                  <div class="title">
-                      <h4 class="text-center">Вибір з аукціонів</h4>
-                  </div>
-                  <div class="content">Завдякі великій кількості портів, 
-                      через які ми доставляємо авто, наші менеджери мають
-                       набагато більше пропозицій. Ми не обмежуемся певними 
-                       регіонами пошуку. Також ви маєте можливість вибрати авто самостійно, в меню "Аукціон"</div>
-              </div>
-              <div class="cards col-md-3">
-                  <div class="icon text-center"><img src="./images/hand-icon.svg" /></div>
-                  <div class="title">
-                      <h4 class="text-center">Вибір з аукціонів</h4>
-                  </div>
-                  <div class="content">Завдякі великій кількості портів, 
-                      через які ми доставляємо авто, наші менеджери мають
-                       набагато більше пропозицій. Ми не обмежуемся певними 
-                       регіонами пошуку. Також ви маєте можливість вибрати авто самостійно, в меню "Аукціон"</div>
-              </div>
-              <div class="cards col-md-3">
-                  <div class="icon text-center"><img src="./images/magnifier-icon.svg" /></div>
-                  <div class="title">
-                      <h4 class="text-center">Вибір з аукціонів</h4>
-                  </div>
-                  <div class="content">Завдякі великій кількості портів, 
-                      через які ми доставляємо авто, наші менеджери мають
-                       набагато більше пропозицій. Ми не обмежуемся певними 
-                       регіонами пошуку. Також ви маєте можливість вибрати авто самостійно, в меню "Аукціон"</div>
-              </div>
-  
-            </div>
-            <div class="row">
-              <div class="cards col-md-3">
-                  <div class="icon text-center"><img src="./images/hand-icon.svg" /></div>
-                  <div class="title">
-                      <h4 class="text-center">Вибір з аукціонів</h4>
-                  </div>
-                  <div class="content">Завдякі великій кількості портів, 
-                      через які ми доставляємо авто, наші менеджери мають
-                       набагато більше пропозицій. Ми не обмежуемся певними 
-                       регіонами пошуку. Також ви маєте можливість вибрати авто самостійно, в меню "Аукціон"</div>
-              </div>
-              <div class="cards col-md-3">
-                <div class="icon text-center"><img src="./images/magnifier-icon.svg" /></div>
-                <div class="title">
-                    <h4 class="text-center">Вибір з аукціонів</h4>
-                </div>
-                <div class="content">Завдякі великій кількості портів, 
-                    через які ми доставляємо авто, наші менеджери мають
-                     набагато більше пропозицій. Ми не обмежуемся певними 
-                     регіонами пошуку. Також ви маєте можливість вибрати авто самостійно, в меню "Аукціон"</div>
-            </div>
-            <div class="cards col-md-3">
-                <div class="icon text-center"><img src="./images/hand-icon.svg" /></div>
-                <div class="title">
-                    <h4 class="text-center">Вибір з аукціонів</h4>
-                </div>
-                <div class="content">Завдякі великій кількості портів, 
-                    через які ми доставляємо авто, наші менеджери мають
-                     набагато більше пропозицій. Ми не обмежуемся певними 
-                     регіонами пошуку. Також ви маєте можливість вибрати авто самостійно, в меню "Аукціон"</div>
-            </div>
-            <div class="cards col-md-3">
-                <div class="icon text-center"><img src="./images/magnifier-icon.svg" /></div>
-                <div class="title">
-                    <h4 class="text-center">Вибір з аукціонів</h4>
-                </div>
-                <div class="content">Завдякі великій кількості портів, 
-                    через які ми доставляємо авто, наші менеджери мають
-                     набагато більше пропозицій. Ми не обмежуемся певними 
-                     регіонами пошуку. Також ви маєте можливість вибрати авто самостійно, в меню "Аукціон"</div>
-            </div>
-  
-          </div>
-        </div>
+          <h3>Вибір, безпека, вигода, швидкість</h3>
+          <p>Наші послуги</p>
+          <div class="card-deck card-columns mt-3">                 
 
+          <div class="card text-center">
+              <img  class="icon" src="./images/hand-icon.svg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Вибір з аукціонів</h5>
+                <p class="card-text"> Завдякі великій кількості портів, через які ми доставляємо авто,
+                  наші менеджери мають набагато більше пропозицій. Ми не
+                  обмежуемся певними регіонами пошуку. Також ви маєте можливість
+                  вибрати авто самостійно, в меню "Аукціон".</p>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img class="icon" src="./images/magnifier-icon.svg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Підбір авто та його перевірка</h5>
+                <p class="card-text"> Наші спеціалісти професіонали з досвідом більше 600 проданих авто. Вони здійснюють 
+                  ретельний пошук найкращих пропозицій по 
+                  всіх аукціонах з якими ми співпраціємо. Далі – повна перевірка історії автомобіля.</p>
+              </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+            <div class="card text-center">
+              <img class="icon" src="./images/hand-icon.svg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Швидка доставка</h5>
+                <p class="card-text">Завдяки розвиненій логістиці корпорації, ми пропонуємо 
+                  короткі терміни доставки. Від вибору шляху в найближчий порт, до мінімального 
+                  часу очікування завантаження на судно.</p>
+              </div>
+            </div>
+            <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+            <div class="card text-center">
+              <img class="icon" src="./images/magnifier-icon.svg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Максимум безпеки</h5>
+                <p class="card-text">Авто під захистом з моменту придбання на аукціоні до вивантаження 
+                  в порту і передачі його власнику. Ми пропонуємо 
+                  повну страховку. Від мінімальних пошкоджень в дорозі до повної втрати вантажу.</p>
+              </div>
+            </div>
+             <div class="w-100 d-none d-sm-block d-md-none"><!--wrap every 2 on sm--></div>
+            <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+       
+            <div class="w-100 d-none d-xl-block"><!-- wrap every 5 on xl--></div>
+          <div class="card text-center">
+              <img  class="icon " src="./images/hand-icon.svg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Оформлення документів</h5>
+                <p class="card-text">Наші фахівці занимаються підготовкою всіх необхідних документів. 
+                  Від проведення торгів, доставки в порт і транспортування до реєстрації авто в 
+                  Україні.</p>
+              </div>
+            </div>
+          
+          
+            <div class="card text-center">
+              <img class="icon" src="./images/magnifier-icon.svg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Вигідна вартість послуг</h5>
+                <p class="card-text"> Ми транспортна корпорація з більш ніж 25 річним досвідом 
+                  міжнародних перевезень. У нас більше портів, через які ми доставляємо авто і за 
+                  рахунок цього шлях доставки значно дешевше. Як по території США так і транспортування в Україну.</p>
+              </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+            <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+            
+            <div class="card text-center">
+              <img class="icon" src="./images/hand-icon.svg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Kредитование</h5>
+                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+           
+        <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+            <div class="card text-center">
+              <img class="icon" src="./images/magnifier-icon.svg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Дополнительные услуги</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+           <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+            <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+        
+          </div>         
+      
+        </div>
       </div>
-     
     </main>
     <script src="main.js"></script>
   </body>
