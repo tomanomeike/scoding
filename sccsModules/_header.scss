@@ -1,10 +1,11 @@
 .menu {
   .navbar-brand {
-    margin-top: 50px;
+    margin-top: 28px;
+    margin-right: 0;
   }
-//  .nav-item{
-//    text-align: start;
-//  }
+  //  .nav-item{
+  //    text-align: start;
+  //  }
   .social {
     display: flex;
     margin-top: -10px;
@@ -15,27 +16,35 @@
   .youtube {
     background-color: #f0f0f0;
     transform: skew(-30deg);
-    height: 40px;
-    margin-right: 5px;
+    height: 48px;
+    margin-left: 10px;
     width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: #d5d5d5;
+    }
   }
   .social img {
     transform: skew(30deg);
     padding-left: -10px;
-    padding-top: 0;
+    // padding-top: 0;
   }
   .contact {
-    margin-top: 50px;
-    
+    margin-top: 11px;
+
     .form-control {
+      display: inline;
       // padding: 0;
       // margin: 38px 0 0 0;
       cursor: pointer;
       border: 0;
-      width: 80%;
+      width: 20%;
       background-image: url('./images/triangle.svg');
-      background-position: calc(100% - 30px) 14px, calc(100% - 20px) 14px,
-        100% 0;
+      background-position: 101% 60%;
+      //  calc(100% - 30px) 14px, calc(100% - 20px) 14px,
+      //   100% 0;
       background-size: 10px 10px, 10px 10px;
       background-repeat: no-repeat;
       -webkit-appearance: none;
@@ -44,10 +53,10 @@
   }
 }
 
-.form-group {
-  padding: 0;
-  margin: 0;
-}
+// .form-group {
+//   padding: 0;
+//   margin: 0;
+// }
 
 .navbar {
   padding: 0;
@@ -59,9 +68,10 @@
   .nav-link {
     text-transform: uppercase;
     border-bottom: 3px solid #ffffff;
-    padding: 15px 15px 15px 0; 
+    // padding: 15px 15px 15px 0;
     padding-left: 0 !important;
-    margin-right: 10px;
+    margin-right: 22px;
+    font-size: 14px;
   }
   .nav-link:hover,
   .nav-link:focus {
@@ -69,19 +79,23 @@
     border-bottom: 3px solid $red;
   }
 }
-// @media (max-width: 768px) {
-  
-//   ul.navbar-nav li.inline {
-//     float: left;
-//   }
-//   ul.navbar-nav li.last-inline + li {
-//     clear: both;
-//   }
-//   ul.navbar-nav li.inline a {
-//     padding-top: 15px;
-//     padding-bottom: 15px;
-//   }
-// }
-a .nav-link{
-  padding-left: 0;
+@media (max-width: 768px) {
+  .navbar button:first-child {
+    display: none;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .container {
+    //  padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .navbar button:nth-child(2){
+      margin-left: 80%;
+      margin-top: -20%;
+      }
+  }
 }

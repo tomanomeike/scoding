@@ -18,5 +18,9 @@
   "homepage": "https://github.com/tomanomeike/scoding#readme",
   "dependencies": {
     "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {
+    "stylelint": "^13.2.0",
+    "stylelint-order": "^4.0.0"
   }
 }

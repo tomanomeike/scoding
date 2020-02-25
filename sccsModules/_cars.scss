@@ -42,34 +42,37 @@
     width: 100%;
   }
   .car {
-    width: 250px;
+    width: 243px;
     min-height: 450px;
     display: inline-block;
     line-height: 0.5;
-    margin-right: 20px;
+    margin-right: 31px;
     margin-bottom: 50px;
     background-color: $white;
     box-shadow: 0px 5px 20px #00000026;
     padding-bottom: 20px;
-    &-text,
-    &-price {
-      padding: 0 20px;
-    }
-    &-title {
-      font-size: 16px;
-      font-weight: 700;
-      margin: 24px 18px;
-    }
-    &-price {
-      font-size: 20px;
-      color: $blue;
-      font-weight: bold;
-    }
-    &-text {
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 0.6;
-    }
+    // &-text,
+    // &-price {
+    //   padding: 0 20px;
+    // }
+    // &-title {
+    //   font-size: 16px;
+    //   font-weight: 700;
+    //   margin: 24px 18px;
+    // }
+    // &-price {
+    //   font-size: 20px;
+    //   color: $blue;
+    //   font-weight: bold;
+    // }
+    // &-text {
+    //   font-size: 12px;
+    //   font-weight: 700;
+    //   line-height: 0.6;
+    // }
+    // &::nth-child(4){
+    //   margin-right: 0;
+    // }
   }
   .card-img-top {
     border-radius: 0;
@@ -80,3 +83,14 @@
     color: #2d3178;
   }
 }
+.table-borderless{
+  margin:10px;
+  width: 95%;
+ td,th{
+  border: 0;
+  padding: 10px;
+  font-size: 12px;;
+  line-height: 0.2;
+ }
+}
+

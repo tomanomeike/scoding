@@ -26,6 +26,9 @@
       <div class="container">
         
         <nav class="navbar navbar-expand-md navbar-light bg-default menu">
+          <a class="navbar-brand text-start" href="#">
+            <img src="images/logo.svg" style="width:122px; height: 25px;" alt="logo"/>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -35,11 +38,8 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav nav-fill w-100">
-              <li class="nav-item text-lg-left">
-                <a class="navbar-brand text-start" href="#">
-                  <img src="images/logo.svg" alt="logo"/>
-                </a>
+            <ul class="navbar-nav nav-fill w-100 mr-3">
+              <li class="nav-item text-lg-left">                
               </li>
               <div class="social">
                 <li class="nav-item facebook">
@@ -59,27 +59,22 @@
                 </li>
 
               </div>
-             
-              <li class="nav-item">
-                <a class="nav-link" href="#"><div class="form-group contact">
-                  <select
-                    class="form-control shadow-none"
-                    id="FormControlSelect1"
-                  >
-                    <option>Київ</option>
-                    <option>Київ</option>
-                    <option>Київ</option>
-                    <option>Київ</option>
-                    <option>Київ</option>
-                  </select>
-                </div></a>
+              <li class="nav-item  contact">
+                <a class="nav-link py-0 border-right" href="#" style="color:#2D3178">
+                  <select class="form-control shadow-none" id="FormControlSelect1">
+                  <option>Київ</option>
+                  <option>Київ</option>
+                  <option>Київ</option>
+                  <option>Київ</option>
+                  <option>Київ</option>
+                </select>
+                <img src="images/phone-icon.svg" alt="phone icon" />
+                + 380 95 829 5001</a>
+                  
               </li>
-              <li class="nav-item contact">
-                <a class="nav-link" href="#"><img src="images/phone-icon.svg" alt="phone icon" />
-                  + 380 95 829 5001</a>
-              </li>
-              <li class="nav-item contact">
-                <a class="nav-link text-lg-right pr-0" href="#"> <img src="images/phone-icon2.svg" alt="phone icon" />
+              <li class="nav-item text-lg-right contact" >
+                <a class="nav-link" href="#" style="color:#F55448">                   
+                  <img src="images/phone-icon2.svg" alt="phone icon" />
                   зворотний дзвінок</a>
               </li>
             </ul>
@@ -96,7 +91,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav nav-fill w-60">
+            <ul class="navbar-nav nav-fill w-80">
               <li class="nav-item text-lg-left">
                 <a class="nav-link" href="#">доставка і розмитнення</a>
               </li>
@@ -116,7 +111,7 @@
                 <a class="nav-link" href="#">відгуки</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">відгуки</a>
+                <a class="nav-link" href="#">блог</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">контакти</a>
@@ -128,22 +123,22 @@
     <main>
       <div class="wrapper">
         <div class="container">
-          <div class="row ">
-            <div class="col-lg-6 text-content">
-              <h2>Вигідний шлях покупки якісного авто з США</h2>
+          <div class="row mr-3 ">
+            <div class="col-lg-6 col-sm-12 text-content">
+              <h3>Вигідний шлях покупки якісного авто з США</h3>
               <p>Міжнародна компанія відтепер в Україні</p>
-              <p>
+              <p class="text-black">
                 Найширший вибір автомобілів в наявності, а також авто у дорозі і
                 пропозицій на аукціонах. Страхування перевезень. Кредитування
                 навіть під замовлення.
               </p>
             </div>
-            <div class="col-lg-2"></div>
+        <div class="col-lg-2"></div>
             <div class="col-lg-4 select-card">
-              <h3 class="title">
+              <h5 class="title" style="color:#2d3178;">
                 Цікавлять можливі варіанти? Ми знайдемо для вас найкращі
                 пропозиції!
-              </h3>
+              </h5>
               <form class="text-center">
                 <label for="exampleFormControlInput1"></label>
                 <input
@@ -169,7 +164,7 @@
                   </select>
                 </div>
                 <div class="slidecontainer">
-                  <p>$6000-$<span id="demo"></span></p>
+                  <p class="price">$6000-$<span id="demo"></span></p>
                   <div class="slider-thumb"></div>
                   <input
                     type="range"
@@ -186,7 +181,7 @@
                   <div class="col-md-4">$70 000</div>
                 </div>
                 <div class="text-center">
-                  <button type="button" class="btn btn-danger">
+                  <button type="button" class="btn btn-danger px-4 mt-4">
                     замовити підбір
                   </button>
                 </div>
@@ -207,8 +202,8 @@
                 Підбір і точний розрахунок авто з США за вашими критеріями
               </h2>
             </div>
-            <div class="col-md-3 d-flex align-items-center justify-content-center">
-              <button type="button" class="btn btn-light">
+            <div class="col-md-3 d-flex align-items-center justify-content-start">
+              <button type="button" class="btn btn-light px-4 font-weight-bold">
                 замовити підбір
               </button>
             </div>
@@ -216,28 +211,47 @@
         </div>
       </div>
       <div class="cars-container py-5">
-        <div class="container">
+        <div class="container card-deck">
           <h2 class="text-start py-3">Топ пропозицій</h2>
           <div>
             <script id="car-template" type="text/x-handlebars-template">
-              <div class="car" >
-                  <img class="card-img-top" src="{{carImage}}" />
-
-                    <div class="d-flex flex-column">
-                      <p class="car-title">{{carTitle}}</p>
-                      <p class="car-price">{{carPrice}}</p>
-                      <p class="car-text">{{carYear}}</p>
-                      <p class="car-text">{{carFuel}}</p>
-                      <p class="car-text">{{carDrivenWheels}}</p>
-                      <p class="car-text">{{carEngine}}</p>
-                      <p class="car-text">{{carMileage}}</p>
-                    </div>
-                    <div class="d-flex flex-column">
-                      <p class="car-text">{{city}}</p>
-                      <p class="car-text">{{date}}</p>
-                    </div>
+              <div class="car">
+                  <img class="card-img-top" src="{{carImage}}" />   
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th colspan="2" style="font-size:16px">{{carTitle}}</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-bottom">
+                        <th scope="row" style="color:#2d3178; font-size:18px">{{carPrice}}</th>
+                        <th class="text-right">{{carYear}}</th>                 
+                      </tr>
+                      <tr>
+                        <th scope="row">{{carFuel}}</th>                                                                    
+                      </tr>
+                      <tr>
+                        <th scope="row">{{carGeardbox}}</th>
+                        <td>Город:</td>                              
+                      </tr>                   
+                      <tr>
+                        <th scope="row">{{carDrivenWheels}}</th>  
+                        <th>{{city}}</th>                                     
+                      </tr>
+                      <tr>
+                        <th scope="row">{{carEngine}}</th>
+                        <td>Дата торгов:</td>  
+                      </tr>
+                      <tr>
+                        <th scope="row">{{carMileage}}</th>
+                        <th>{{date}}</th>                         
+                      </tr>
+                    </tbody>
+                  </table>                
                     <div class="text-center">
-                      <a href="#" class="btn button-blue">Подробнee</a>
+                      <a href="#" class="btn button-blue mt-4">Подробнee</a>
                     </div>
                    
               </div>
@@ -250,7 +264,7 @@
             </section>
           </div>
           <div class="text-center">            
-          <button type="button" class="btn btn-danger">Показать все</button>
+          <button type="button" class="btn btn-danger px-4 py-2">Показать все</button>
           </div>
         </div>
       </div>
@@ -272,9 +286,9 @@
       </div>
       <div class="cards-container">
         <div class="container">
-          <h3>Вибір, безпека, вигода, швидкість</h3>
-          <p>Наші послуги</p>
-          <div class="card-deck mt-3">                 
+          <h3 class="title">Вибір, безпека, вигода, швидкість</h3>
+          <p class="paragraph">Наші послуги</p>
+          <div class="card-deck mr-3 pb-5">                 
 
           <div class="card text-center">
               <img  class="icon" src="./images/hand-icon.svg" alt="Card image cap">
