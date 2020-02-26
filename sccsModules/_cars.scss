@@ -15,27 +15,30 @@
     border-radius: 0;
   }
   .button-blue {
-    border: 1px solid #2d3178;
+    border: 2px solid #2d3178;
     border-radius: 12px;
     color: #2d3178;
+    font-size: 16px;
+    font-weight: bolder;
   }
 }
-.table-borderless{
-  margin:10px;
+.table-borderless {
+  margin: 10px;
   width: 95%;
- td,th{
-  border: 0;
-  padding: 10px;
-  font-size: 12px;;
-  line-height: 0.2;
- }
+  td,
+  th {
+    border: 0;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 0.2;
+  }
 }
 
 @media (max-width: 768px) {
- .cars{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-}
+  .cars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+}

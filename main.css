@@ -11007,9 +11007,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .cars-container .button-blue {
-  border: 1px solid #2d3178;
+  border: 2px solid #2d3178;
   border-radius: 12px;
   color: #2d3178;
+  font-size: 16px;
+  font-weight: bolder;
 }
 
 .table-borderless {
@@ -11017,7 +11019,8 @@ a.text-dark:hover, a.text-dark:focus {
   width: 95%;
 }
 
-.table-borderless td, .table-borderless th {
+.table-borderless td,
+.table-borderless th {
   border: 0;
   padding: 10px;
   font-size: 12px;
