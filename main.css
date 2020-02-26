@@ -10851,10 +10851,14 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar button:first-child {
     display: none;
   }
+  .social {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
+    padding-left: 10%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10878,7 +10882,7 @@ a.text-dark:hover, a.text-dark:focus {
 .wrapper {
   background-image: url("./images/background.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -10887,7 +10891,8 @@ a.text-dark:hover, a.text-dark:focus {
   padding-right: 200px;
 }
 
-.wrapper .text-content h3, .wrapper .text-content p {
+.wrapper .text-content h3,
+.wrapper .text-content p {
   color: #2d3178;
 }
 
@@ -10917,9 +10922,10 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
 }
 
-.wrapper .select-card .slidecontainer .price, .wrapper .select-card .slidecontainer #demo {
+.wrapper .select-card .slidecontainer .price,
+.wrapper .select-card .slidecontainer #demo {
   font-size: 24px;
-  color: #2D3178;
+  color: #2d3178;
   font-weight: 500;
 }
 
@@ -10970,33 +10976,17 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 22px 0;
 }
 
-/* cars */
-/* .module-car:nth-of-type(3n) {
-    margin-right: 0;
-  } */
-/* .module-car::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: linear-gradient(transparent 20%, black); */
-/* z-index: 1;
-  } */
-/* .car-director::before {
-    content: "Director";
-    display: block;
-    font-size: 0.5rem;
-    text-transform: uppercase;
-    color: #999;
-  } */
-.cars-container {
-  background-color: #f5f5f5;
+@media (max-width: 576px) {
+  .text-content {
+    padding-left: 100px;
+  }
+  .container-stripe {
+    text-align: center;
+  }
 }
 
-.cars-container #cars {
-  width: 100%;
+.cars-container {
+  background-color: #f5f5f5;
 }
 
 .cars-container .car {
@@ -11034,6 +11024,24 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 0.2;
 }
 
+@media (max-width: 768px) {
+  .cars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .cards-container {
   background-image: url("./images/background2.png");
   background-repeat: no-repeat;
@@ -11042,7 +11050,8 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 90px;
 }
 
-.cards-container h3, .cards-container .paragraph {
+.cards-container h3,
+.cards-container .paragraph {
   color: #fff;
   font-weight: bolder;
 }

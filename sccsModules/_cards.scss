@@ -1,24 +1,20 @@
 .cards-container {
-    background-image: url("./images/background2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top:90px;
-    h3, .paragraph{
-        color:$white;
-        font-weight: bolder;
-    }
-    .card {
-        margin-top:26px;
-        padding: 40px 20px;
-        font-size: 12px;
-        // line-height: 0.8;
-        font-family: OpenSans-Regular;
-        width: 308px;
-        height: 352px;
-
-      }
-
+  background-image: url('./images/background2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 90px;
+  h3,
+  .paragraph {
+    color: $white;
+    font-weight: bolder;
   }
-  
- 
+  .card {
+    margin-top: 26px;
+    padding: 40px 20px;
+    font-size: 12px;
+    font-family: OpenSans-Regular;
+    width: 308px;
+    height: 352px;
+  }
+}
